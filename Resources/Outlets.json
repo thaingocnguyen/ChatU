@@ -1,0 +1,27 @@
+﻿{
+	“Outlet”: [
+
+		{
+			“Campus” : “Burnaby”,
+			“Building” : “ASB: Applied Science Building”,
+			“Notes” : “Desks by pillars, desks before TASC, on marble tables”
+		},
+		
+		{
+			“Campus” : “Burnaby”,
+			“Building” : “AQ: Academic Quadrangle”,
+			“Notes” : “Lounge outside C9001 (above and below stairs), in cubicles, on tables”
+		},
+
+		{
+			“Campus” : “Burnaby”,
+			“Building” : “Bennett Library”,
+			“Notes” : “Along desks, built into second floor seating”
+		},
+
+		{
+			“Campus” : “Surrey”,
+			“Notes” : “Along galleria windows, ground of SFSS lounge”
+		}
+	]
+}
