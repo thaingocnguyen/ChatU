@@ -131,6 +131,9 @@ namespace Microsoft.BotBuilderSamples
             var userState = new UserState(dataStore);
             services.AddSingleton(userState);
 
+            var salutationState = new UserState(dataStore);
+            services.AddSingleton(salutationState);
+
             services.AddBot<BasicBot>(options =>
             {
                 options.CredentialProvider = new SimpleCredentialProvider(endpointService.AppId, endpointService.AppPassword);

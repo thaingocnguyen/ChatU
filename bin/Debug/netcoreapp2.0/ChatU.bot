@@ -1,0 +1,63 @@
+{
+    "name": "ChatU",
+    "description": "",
+    "services": [
+        {
+            "type": "abs",
+            "tenantId": "22211faa-46e5-4ee8-b4eb-f2aa835c87ad",
+            "subscriptionId": "82a47d9f-8739-41be-a115-fa6457cc5e5c",
+            "resourceGroup": "ChatU",
+            "serviceName": "ChatU",
+            "name": "ChatU",
+            "id": "1",
+            "appId": "bc6e75ed-5393-43ae-bafd-4de53d1125d7"
+        },
+        {
+            "type": "blob",
+            "connectionString": "DefaultEndpointsProtocol=https;AccountName=chatu8f38;AccountKey=tM18zBxfCFz95dkXpmRJnEXfUd4ajzgFvUUf8I+u3aRcYaMUi3KDFQ6OTT5Jw/QsGh35RnZb5+GeT/4WVfiIKQ==;",
+            "tenantId": "22211faa-46e5-4ee8-b4eb-f2aa835c87ad",
+            "subscriptionId": "82a47d9f-8739-41be-a115-fa6457cc5e5c",
+            "resourceGroup": "ChatU",
+            "serviceName": "chatu8f38",
+            "id": "2"
+        },
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "development",
+            "id": "3"
+        },
+        {
+            "type": "endpoint",
+            "appId": "bc6e75ed-5393-43ae-bafd-4de53d1125d7",
+            "appPassword": ")T-5**.XDIT>zW0#;RG8r3GeGk^",
+            "endpoint": "https://chatu-8f38.azurewebsites.net/api/messages",
+            "name": "production",
+            "id": "4"
+        },
+        {
+            "type": "appInsights",
+            "instrumentationKey": "2c4a70e3-81b4-414c-9aec-fe789ea080d6",
+            "applicationId": "5146c218-d270-4d78-9375-c44ec6216c47",
+            "apiKeys": {},
+            "tenantId": "22211faa-46e5-4ee8-b4eb-f2aa835c87ad",
+            "subscriptionId": "82a47d9f-8739-41be-a115-fa6457cc5e5c",
+            "resourceGroup": "ChatU",
+            "serviceName": "ChatUo5ca32",
+            "id": "5"
+        },
+        {
+            "type": "luis",
+            "appId": "90687d09-9a5f-4a68-b06f-15537bc49674",
+            "authoringKey": "331041cc9f1c403da29665962ca7eb8b",
+            "version": "0.1",
+            "region": "westus",
+            "name": "BasicBotLuisApplication",
+            "id": "6"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0"
+}

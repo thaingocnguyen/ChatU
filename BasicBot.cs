@@ -37,17 +37,19 @@ namespace Microsoft.BotBuilderSamples
         private readonly UserState _userState;
         private readonly ConversationState _conversationState;
         private readonly BotServices _services;
+        private readonly SalutationStateAccessor _salutationStateAccessor;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="BasicBot"/> class.
         /// </summary>
         /// <param name="botServices">Bot services.</param>
         /// <param name="accessors">Bot State Accessors.</param>
-        public BasicBot(BotServices services, UserState userState, ConversationState conversationState, ILoggerFactory loggerFactory)
+        public BasicBot(BotServices services, UserState userState, ConversationState conversationState, ILoggerFactory loggerFactory, SalutationStateAccessor statePropertyAccessor)
         {
             _services = services ?? throw new ArgumentNullException(nameof(services));
             _userState = userState ?? throw new ArgumentNullException(nameof(userState));
             _conversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+            _salutationStateAccessor = statePropertyAccessor ?? throw new System.ArgumentNullException("state accessor can't be null");
 
             _greetingStateAccessor = _userState.CreateProperty<GreetingState>(nameof(GreetingState));
             _dialogStateAccessor = _conversationState.CreateProperty<DialogState>(nameof(DialogState));
@@ -72,6 +74,8 @@ namespace Microsoft.BotBuilderSamples
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken)
         {
+            // use state accessor to extract the didBotWelcomeUser flag
+            var didBotWelcomeUser = await _salutationStateAccessor.SalutationState.GetAsync(turnContext, () => new SalutationState());
             var activity = turnContext.Activity;
 
             // Create a dialog context
@@ -79,6 +83,14 @@ namespace Microsoft.BotBuilderSamples
 
             if (activity.Type == ActivityTypes.Message)
             {
+                if (didBotWelcomeUser.DidBotGreetUser == false) {
+                    didBotWelcomeUser.DidBotGreetUser = true;
+                    // Update user state flag to reflect bot handled first user interaction.
+                    await _salutationStateAccessor.SalutationState.SetAsync(turnContext, didBotWelcomeUser);
+                    await _salutationStateAccessor.UserState.SaveChangesAsync(turnContext);
+                    await turnContext.SendActivityAsync($"Hi! I'm ChatU.");
+                }
+                
                 // Perform a call to LUIS to retrieve results for the current activity message.
                 var luisResults = await _services.LuisServices[LuisConfiguration].RecognizeAsync(dc.Context, cancellationToken);
 

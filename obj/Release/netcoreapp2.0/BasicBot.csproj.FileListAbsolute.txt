@@ -1,0 +1,11 @@
+/Users/thaingoc/Documents/ChatU/bin/Release/netcoreapp2.0/ChatU.bot
+/Users/thaingoc/Documents/ChatU/bin/Release/netcoreapp2.0/BasicBot.deps.json
+/Users/thaingoc/Documents/ChatU/bin/Release/netcoreapp2.0/BasicBot.runtimeconfig.json
+/Users/thaingoc/Documents/ChatU/bin/Release/netcoreapp2.0/BasicBot.runtimeconfig.dev.json
+/Users/thaingoc/Documents/ChatU/bin/Release/netcoreapp2.0/BasicBot.dll
+/Users/thaingoc/Documents/ChatU/bin/Release/netcoreapp2.0/BasicBot.pdb
+/Users/thaingoc/Documents/ChatU/obj/Release/netcoreapp2.0/BasicBot.csproj.CoreCompileInputs.cache
+/Users/thaingoc/Documents/ChatU/obj/Release/netcoreapp2.0/BasicBot.AssemblyInfoInputs.cache
+/Users/thaingoc/Documents/ChatU/obj/Release/netcoreapp2.0/BasicBot.AssemblyInfo.cs
+/Users/thaingoc/Documents/ChatU/obj/Release/netcoreapp2.0/BasicBot.dll
+/Users/thaingoc/Documents/ChatU/obj/Release/netcoreapp2.0/BasicBot.pdb
