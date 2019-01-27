@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  <html long = "en">
+    <head>
+      <title> chatU - Home </title>
+      <link type  = "text/css" href="chatUcss.css rel = "stylesheet"/>
+      <meta charset = "UTF-8">
+      <meta name = "viewport"
+      content = "width = device-width, initial-scale = 1">
+      <style>
+      *{
+        box-sizing: border-box;
+      }
+      </style>
+      </head>
+      <img src="horizontal_color.png" align = "left">
+      <link type = "text/css" href = index.css rel = "stylesheet" />
+      <body>
+        <h1> The Team </h1>
+
+        <p> Natalie Chow: </p>
+        <pre> Hello! I’m a User Experience
+          designer from UW Seattle. Currently,
+          I am a senior double majoring in Human
+          Centered Design & Engineering (HCDE),
+          and Interdisciplinary Visual Arts (IVA). A
+          mouthful, I know. HCDE is centered around
+          learning user research, user experience
+          design and interaction design, while IVA is
+          focused on the fine arts like drawing,
+          printmaking, and painting. I am graduating
+          in June 2019. Some of my interests are
+          accessibility,designing for kids, and gaming.
+          If you have any question, comments, conundrums,
+          or quibbles, feel free to contact me!</pre>
+
+        <p> <a href = "http://nmc-design.com">Website</a> |
+            <a href = "https://www.linkedin.com/in/nmcdesign/">LinkedIn</a>
+        </p>
+
+
+        <p> Hamza Kamal: </p>
+        <pre>Salutations! I’m a 2nd year Engineering
+          Science student from SFU. People describe me
+          as “a nice dude”. I think they’re right. My
+          day starts with reading up about Canadian
+          politics and then transitions to some intense
+          firmware development at Sierra Wireless. I am
+          intrigued by the possibilities tech offers in
+          making the world a better place and passionate
+          about working on meaningful projects. Reach me
+          on any of the links below! </pre>
+        <br>
+        <p> <a href = "https://www.linkedin.com/in/hamzakamal/">LinkedIn</a> | </p>
+
+        <p> Thai Nguyen: </p>
+        <pre>Hi! I’m a 2nd Computer Science student
+          from UBC. My favourite language to code with
+          is C++, especially in VS Code. Other languages
+          I use are C, java, bracket, and python. Part
+          of my daily routine includes neopets, studying
+          hard, and drinking lots of water. I like keeping
+          it short and sweet so I’m gonna end it there. If
+          you wanna reach me then just follow the links
+          below!</pre>
+        <br>
+
+        <p> Karene Luu: </p>
+        <pre>Hey there! I’m a 2nd year Engineering Science
+          student from SFU. My skills mainly lie in circuits,
+          design, and eating a ridiculous amount of food.
+          Languages I often use are C, C++, VHDL, VBA, HTML,
+          and Python. I am currently on co-op at Ballard Power
+          Systems in their Research team.l On my spare time I
+          enjoy building things with Arduino and Raspberry Pi.
+          If you’re looking for someone who is passionate about
+          the environment, health, and technology then shoot me
+          a message!
+        </pre>
+        <p> <a href = "https://www.linkedin.com/in/kareneluu/">LinkedIn</a> | </p>
+
+      </body>
+  </html>
